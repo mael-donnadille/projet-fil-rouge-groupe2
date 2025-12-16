@@ -36,3 +36,6 @@ def vocabulaire(request):
             or q in (item.get("alias") or "").lower()
         ]
     return render(request, "core/vocabulaire.html", {"vocab": vocab, "q": request.GET.get("q", "")})
+
+def lee_sin_view(request):
+    return render(request, "core/lee_sin.html")
