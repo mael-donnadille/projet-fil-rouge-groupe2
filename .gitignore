@@ -5,6 +5,8 @@
 __pycache__/
 *.pyc
 *.pyo
+.venv/
+db.sqlite3
 
 # Django
 db.sqlite3
