@@ -42,3 +42,6 @@ def lee_sin_view(request):
 
 def gnar_view(request):
     return render(request, "core/gnar.html")
+
+def warwick_view(request):
+    return render(request, "core/warwick.html")
