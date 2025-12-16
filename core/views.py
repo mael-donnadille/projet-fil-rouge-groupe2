@@ -3,7 +3,6 @@ from django.shortcuts import render
 
 def home(request):
     return render(request, "core/home.html")
-<<<<<<< Updated upstream
 
 VOCAB = [
     {"term": "CS", "alias": "Creep Score", "def": "Nombre de sbires/monstres tués (ta farm).", "example": "Essaye d’avoir 70 CS à 10 minutes."},
@@ -37,5 +36,3 @@ def vocabulaire(request):
             or q in (item.get("alias") or "").lower()
         ]
     return render(request, "core/vocabulaire.html", {"vocab": vocab, "q": request.GET.get("q", "")})
-=======
->>>>>>> Stashed changes
