@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lee Sin – Le Moine Aveugle</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #e5e7eb;
+
+            background-image: url("{% static 'lee_sin/background.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(2, 6, 23, 0.85);
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #facc15;
+        }
+
+        header p {
+            max-width: 800px;
+            margin: auto;
+            color: #cbd5f5;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .skill {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 20px;
+            background: rgba(2, 6, 23, 0.9);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .skill img {
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+            border: 2px solid #38bdf8;
+        }
+
+        .skill h2 {
+            margin: 0;
+            color: #38bdf8;
+        }
+
+        .skill span {
+            color: #facc15;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Lee Sin</h1>
+    <p>Le Moine Aveugle est un combattant agile basé sur la maîtrise mécanique.</p>
+</header>
+
+<div class="container">
+
+    <div class="skill">
+        <img src="{% static 'lee_sin/p.png' %}">
+        <div>
+            <h2><span>Passif</span> – Agitation</h2>
+            <p>
+                Après avoir lancé une compétence, les deux prochaines attaques de base de Lee Sin gagnent de la vitesse d’attaque et rendent de l’énergie.
+                Ce passif récompense l’alternance entre sorts et attaques.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill">
+        <img src="{% static 'lee_sin/q.png' %}">
+        <div>
+            <h2><span>A</span> – Onde Sonore</h2>
+            <p>
+                Lee Sin projette une onde sonore qui inflige des dégâts physiques. Si elle touche un ennemi, il peut se projeter sur lui,
+                infligeant des dégâts supplémentaires basés sur les PV manquants.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill">
+        <img src="{% static 'lee_sin/w.png' %}">
+        <div>
+            <h2><span>Z</span> – Protection</h2>
+            <p>
+                Lee Sin se déplace vers un allié ou une balise et lui confère un bouclier. La seconde activation augmente son vol de vie et son omnivamp,
+                renforçant sa survie en combat.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill">
+        <img src="{% static 'lee_sin/e.png' %}">
+        <div>
+            <h2><span>E</span> – Tempête</h2>
+            <p>
+                Lee Sin frappe le sol, infligeant des dégâts magiques et révélant les ennemis proches. La seconde activation ralentit fortement
+                les ennemis touchés.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill">
+        <img src="{% static 'lee_sin/r.png' %}">
+        <div>
+            <h2><span>R</span> – Rage du Dragon</h2>
+            <p>
+                Lee Sin donne un puissant coup de pied qui projette un ennemi en arrière, infligeant de lourds dégâts physiques.
+                Les ennemis touchés sur la trajectoire sont également blessés.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    Projet Django – Page fan League of Legends
+</footer>
+
+</body>
+</html>
