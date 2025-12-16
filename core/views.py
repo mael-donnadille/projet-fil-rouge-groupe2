@@ -45,3 +45,6 @@ def gnar_view(request):
 
 def warwick_view(request):
     return render(request, "core/warwick.html")
+
+def choix_perso_view(request):
+    return render(request, "core/choix_perso.html")

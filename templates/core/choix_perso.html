@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Champions – League of Legends</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(180deg, #020617, #020617);
+            color: #e5e7eb;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #facc15;
+        }
+
+        header p {
+            color: #cbd5f5;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .champions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            position: relative;
+            height: 420px;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 80%; 
+            transition: transform 0.6s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.15);
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to top,
+                rgba(2,6,23,0.95),
+                rgba(2,6,23,0.2)
+            );
+            display: flex;
+            align-items: flex-end;
+            padding: 25px;
+        }
+
+        .overlay h2 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #facc15;
+        }
+
+        .overlay span {
+            display: block;
+            font-size: 0.9rem;
+            color: #38bdf8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Champions</h1>
+    <p>Sélectionne un champion pour découvrir ses compétences et son gameplay.</p>
+</header>
+
+<div class="champions">
+
+    <a href="{% url 'lee_sin' %}" class="card">
+        <img src="{% static 'lee_sin/background.jpg' %}">
+        <div class="overlay">
+            <div>
+                <h2>Lee Sin</h2>
+                <span>Le Moine Aveugle</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="{% url 'gnar' %}" class="card">
+        <img src="{% static 'gnar/background2.jpg' %}">
+        <div class="overlay">
+            <div>
+                <h2>Gnar</h2>
+                <span>Le Yordle Préhistorique</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="{% url 'warwick' %}" class="card">
+        <img src="{% static 'warwick/background3.jpg' %}">
+        <div class="overlay">
+            <div>
+                <h2>Warwick</h2>
+                <span>La Fureur Déchaînée de Zaun</span>
+            </div>
+        </div>
+    </a>
+
+</div>
+
+<footer>
+    Projet Django – Sélection de champions
+</footer>
+
+</body>
+</html>
