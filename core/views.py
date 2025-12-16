@@ -39,3 +39,6 @@ def vocabulaire(request):
 
 def lee_sin_view(request):
     return render(request, "core/lee_sin.html")
+
+def gnar_view(request):
+    return render(request, "core/gnar.html")

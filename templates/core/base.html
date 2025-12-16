@@ -1,12 +1,9 @@
-<<<<<<< Updated upstream
-=======
 {% load static %}
->>>>>>> Stashed changes
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-<<<<<<< Updated upstream
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{% block title %}LoL Débutants{% endblock %}</title>
 </head>
@@ -15,6 +12,7 @@
 <header>
     <h1>LoL Débutants</h1>
     <nav>
+        <a href="{% url 'lee_sin' %}">Vocabulaire</a>
         <a href="{% url 'home' %}">Accueil</a>
         <a href="{% url 'vocabulaire' %}">Vocabulaire</a>
     </nav>
@@ -29,7 +27,6 @@
 <footer>
     <p>Projet fil rouge – Groupe 2</p>
 </footer>
-=======
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}LoL Débutants{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -66,7 +63,5 @@
       <p class="footer-small">Django • Git • Travail en équipe</p>
     </div>
   </footer>
->>>>>>> Stashed changes
-
 </body>
 </html>
