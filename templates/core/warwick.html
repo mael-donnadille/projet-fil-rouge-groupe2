@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Lee Sin – Le Moine Aveugle</title>
+    <title>Warwick – La Fureur Déchaînée de Zaun</title>
 
     <style>
         body {
@@ -11,7 +11,7 @@
             font-family: 'Segoe UI', Arial, sans-serif;
             color: #e5e7eb;
 
-            background-image: url("{% static 'lee_sin/background.jpg' %}");
+            background-image: url("{% static 'warwick/background3.jpg' %}");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -86,63 +86,71 @@
 <body>
 
 <header>
-    <h1>Lee Sin</h1>
-    <p>Le Moine Aveugle est un combattant agile basé sur la maîtrise mécanique.</p>
+    <h1>Warwick</h1>
+    <p>
+        La Fureur Déchaînée de Zaun est un chasseur implacable qui traque les ennemis blessés.
+        Plus ses proies sont faibles, plus Warwick devient rapide et dangereux.
+    </p>
 </header>
 
 <div class="container">
 
     <div class="skill">
-        <img src="{% static 'lee_sin/p.png' %}">
+        <img src="{% static 'warwick/p3.png' %}">
         <div>
-            <h2><span>Passif</span> – Agitation</h2>
+            <h2><span>Passif</span> – Soif Infinie</h2>
             <p>
-                Après avoir lancé une compétence, les deux prochaines attaques de base de Lee Sin gagnent de la vitesse d’attaque et rendent de l’énergie.
-                Ce passif récompense l’alternance entre sorts et attaques.
+                Les attaques de base de Warwick infligent des dégâts magiques bonus et lui rendent
+                des points de vie. Lorsque sa santé est faible, ses soins sont fortement augmentés,
+                ce qui le rend extrêmement difficile à éliminer en combat prolongé.
             </p>
         </div>
     </div>
 
     <div class="skill">
-        <img src="{% static 'lee_sin/q.png' %}">
+        <img src="{% static 'warwick/q3.png' %}">
         <div>
-            <h2><span>A</span> – Onde Sonore</h2>
+            <h2><span>A</span> – Crocs de la Bête</h2>
             <p>
-                Lee Sin projette une onde sonore qui inflige des dégâts physiques. Si elle touche un ennemi, il peut se projeter sur lui,
-                infligeant des dégâts supplémentaires basés sur les PV manquants.
+                Warwick bondit sur sa cible et la mord, infligeant des dégâts magiques basés sur les
+                points de vie maximums de l’ennemi. Il se soigne en fonction des dégâts infligés
+                et peut suivre sa cible même si elle tente de s’échapper.
             </p>
         </div>
     </div>
 
     <div class="skill">
-        <img src="{% static 'lee_sin/w.png' %}">
+        <img src="{% static 'warwick/w3.png' %}">
         <div>
-            <h2><span>Z</span> – Protection</h2>
-            <p>
-                Lee Sin se déplace vers un allié ou une balise et lui confère un bouclier. La seconde activation augmente son vol de vie et son omnivamp,
-                renforçant sa survie en combat.
+            <h2><span>Z</span> – Chasse Sanguinaire</h2>
+              <p>
+                Warwick détecte les ennemis à faible santé sur toute la carte. Lorsqu’il les poursuit,
+                il gagne énormément de vitesse de déplacement et d’attaque, lui permettant de traquer
+                et d’achever ses proies sans relâche.
             </p>
         </div>
     </div>
 
     <div class="skill">
-        <img src="{% static 'lee_sin/e.png' %}">
+        <img src="{% static 'warwick/e3.png' %}">
         <div>
-            <h2><span>E</span> – Tempête</h2>
+            <h2><span>E</span> – Hurlement Primitif</h2>
             <p>
-                Lee Sin frappe le sol, infligeant des dégâts magiques et révélant les ennemis proches. La seconde activation ralentit fortement
-                les ennemis touchés. d
+                Warwick réduit temporairement les dégâts qu’il subit avant de pousser un hurlement
+                terrifiant qui effraie les ennemis proches, les forçant à fuir et ouvrant une
+                opportunité idéale pour engager ou survivre.
             </p>
         </div>
     </div>
 
     <div class="skill">
-        <img src="{% static 'lee_sin/r.png' %}">
+        <img src="{% static 'warwick/r3.png' %}">
         <div>
-            <h2><span>R</span> – Rage du Dragon</h2>
+            <h2><span>R</span> – Contrainte Infinie</h2>
             <p>
-                Lee Sin donne un puissant coup de pied qui projette un ennemi en arrière, infligeant de lourds dégâts physiques.
-                Les ennemis touchés sur la trajectoire sont également blessés.
+                Warwick bondit sur une longue distance et supprime le premier champion ennemi touché.
+                Il le cloue au sol, inflige de lourds dégâts sur la durée et se soigne massivement,
+                faisant de cette compétence une arme dévastatrice en duel et en teamfight.
             </p>
         </div>
     </div>

@@ -39,3 +39,12 @@ def vocabulaire(request):
 
 def lee_sin_view(request):
     return render(request, "core/lee_sin.html")
+
+def gnar_view(request):
+    return render(request, "core/gnar.html")
+
+def warwick_view(request):
+    return render(request, "core/warwick.html")
+
+def choix_perso_view(request):
+    return render(request, "core/choix_perso.html")
