@@ -48,3 +48,7 @@ def warwick_view(request):
 
 def choix_perso_view(request):
     return render(request, "core/choix_perso.html")
+
+# Import des vues additionnelles
+from .views_extra import roles, carte, conseils
+
