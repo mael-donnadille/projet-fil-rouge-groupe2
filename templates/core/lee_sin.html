@@ -1,11 +1,10 @@
+{% extends "core/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Lee Sin – Le Moine Aveugle</title>
 
-    <style>
+{% block title %}Lee Sin — Le Moine Aveugle{% endblock %}
+
+{% block extra_head %}
+<style>
         body {
             margin: 0;
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -81,6 +80,9 @@
             color: #64748b;
         }
     </style>
+{% endblock %}
+
+{% block content %}
 </head>
 
 <body>
@@ -155,3 +157,4 @@
 
 </body>
 </html>
+{% endblock %}

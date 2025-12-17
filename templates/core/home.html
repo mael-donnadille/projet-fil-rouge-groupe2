@@ -1,17 +1,28 @@
 {% extends "core/base.html" %}
 
-{% block title %}
-Accueil – LoL Débutants
-{% endblock %}
+{% block title %}Accueil — LoL Débutants{% endblock %}
 
 {% block content %}
-    <h2>Bienvenue sur LoL Débutants</h2>
+<section class="card">
+  <h1>Bienvenue sur LoL Débutants</h1>
+  <p class="muted">
+    Un guide simple pour comprendre League of Legends : rôles, carte, vocabulaire,
+    conseils, et champions phares. Projet réalisé par le groupe 2.
+  </p>
 
-    <p>
-        Ce site est destiné aux joueurs débutants sur League of Legends.
-    </p>
+  <h2>Champions phares</h2>
+  <p class="muted">Découvre Lee Sin (disponible), et les pages Gnar / Warwick (en cours).</p>
 
-    <p>
-        Le projet est actuellement en cours de construction.
-    </p>
+  <div class="home-champs">
+    <a class="home-champ" href="{% url 'lee_sin' %}">
+      <strong>Lee Sin</strong><span>Le Moine Aveugle</span>
+    </a>
+    <a class="home-champ" href="{% url 'gnar' %}">
+      <strong>Gnar</strong><span>Le Yordle Préhistorique</span>
+    </a>
+    <a class="home-champ" href="{% url 'warwick' %}">
+      <strong>Warwick</strong><span>La Fureur Déchaînée de Zaun</span>
+    </a>
+  </div>
+</section>
 {% endblock %}
