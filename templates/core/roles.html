@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rôles – League of Legends</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #e5e7eb;
+            background: linear-gradient(180deg, #020617, #020617);
+        }
+
+        header {
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #facc15;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            max-width: 900px;
+            margin: auto;
+            color: #cbd5f5;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .role {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 25px;
+            background: rgba(2, 6, 23, 0.95);
+            border-radius: 18px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease;
+        }
+
+        .role:hover {
+            transform: translateY(-5px);
+        }
+
+        .role img {
+            width: 110px;
+            height: 110px;
+            border-radius: 14px;
+            border: 2px solid #38bdf8;
+            object-fit: cover;
+        }
+
+        .role h2 {
+            margin: 0;
+            color: #38bdf8;
+            font-size: 1.6rem;
+        }
+
+        .role p {
+            margin-top: 10px;
+            line-height: 1.7;
+            color: #d1d5db;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Les rôles dans League of Legends</h1>
+    <p>
+        Dans League of Legends, chaque joueur occupe un rôle spécifique sur la carte.
+        Chaque rôle a ses responsabilités, ses objectifs et son impact sur la partie.
+    </p>
+</header>
+
+<div class="container">
+
+    <!-- TOP -->
+    <div class="role">
+        <img src="{% static 'roles/top.avif' %}" alt="Toplane">
+        <div>
+            <h2>Toplane</h2>
+            <p>
+                La toplane est une voie solo axée sur la résistance, le duel et le split push.
+                Les champions top sont souvent des tanks ou des bruisers capables de tenir longtemps
+                en combat et d’attirer la pression ennemie.
+                Le toplaner doit savoir gérer sa lane seul et avoir un bon timing pour rejoindre les combats d’équipe.
+            </p>
+        </div>
+    </div>
+
+    <!-- JUNGLE -->
+    <div class="role">
+        <img src="{% static 'roles/jungle.avif' %}" alt="Jungle">
+        <div>
+            <h2>Jungle</h2>
+            <p>
+                Le jungler évolue hors des lanes et joue un rôle clé dans le contrôle de la carte.
+                Il élimine les camps de la jungle, sécurise les objectifs comme le Dragon et le Baron,
+                et aide ses alliés grâce aux ganks.
+                Une bonne vision de jeu et une excellente prise de décision sont essentielles.
+            </p>
+        </div>
+    </div>
+
+    <!-- MID -->
+    <div class="role">
+        <img src="{% static 'roles/mid.avif' %}" alt="Midlane">
+        <div>
+            <h2>Midlane</h2>
+            <p>
+                La midlane est la voie centrale et la plus influente.
+                Les champions mid infligent généralement beaucoup de dégâts et peuvent se déplacer rapidement
+                pour aider les autres lanes.
+                Le midlaner est souvent le moteur de l’équipe en début et milieu de partie.
+            </p>
+        </div>
+    </div>
+
+    <!-- ADC -->
+    <div class="role">
+        <img src="{% static 'roles/adc.avif' %}" alt="ADC">
+        <div>
+            <h2>ADC (Carry AD)</h2>
+            <p>
+                L’ADC est le principal source de dégâts physiques à distance en fin de partie.
+                Fragile mais extrêmement puissant avec des objets,
+                il doit être protégé par son équipe.
+                Son positionnement en combat est crucial pour faire la différence.
+            </p>
+        </div>
+    </div>
+
+    <!-- SUPPORT -->
+    <div class="role">
+        <img src="{% static 'roles/support.png' %}" alt="Support">
+        <div>
+            <h2>Support</h2>
+            <p>
+                Le support accompagne l’ADC en début de partie et protège toute l’équipe par la suite.
+                Il fournit de la vision, du contrôle, des soins ou de l’engage.
+                Un bon support ne se mesure pas aux kills mais à son impact stratégique.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    Projet Django – Page pédagogique League of Legends
+</footer>
+
+</body>
+</html>
