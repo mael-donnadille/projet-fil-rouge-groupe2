@@ -20,3 +20,18 @@ media/
 # OS
 Thumbs.db
 .DS_Store
+
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+venv/
+
+# Django
+db.sqlite3
+*.log
