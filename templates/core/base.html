@@ -1,51 +1,15 @@
 {% load static %}
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{% block title %}LoL Débutants{% endblock %}</title>
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
-=======
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{% block title %}LoL Débutants{% endblock %}</title>
->>>>>>> c5d2e946a238c02b30a1fb0a224e960ea165c567
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  {% block extra_head %}{% endblock %}
 </head>
 
-<<<<<<< HEAD
-
-=======
-<header>
-    <h1>LoL Débutants</h1>
-    <nav>
-        <a href="{% url 'lee_sin' %}">Vocabulaire</a>
-        <a href="{% url 'home' %}">Accueil</a>
-        <a href="{% url 'vocabulaire' %}">Vocabulaire</a>
-    </nav>
-    <hr>
-</header>
-
-<main>
-    {% block content %}{% endblock %}
-</main>
-
-<hr>
-<footer>
-    <p>Projet fil rouge – Groupe 2</p>
-</footer>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}LoL Débutants{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
->>>>>>> c5d2e946a238c02b30a1fb0a224e960ea165c567
-<body>
-
+<body class="{% block body_class %}{% endblock %}">
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="{% url 'home' %}">
@@ -59,6 +23,7 @@
         <a class="nav-link" href="{% url 'carte' %}">Carte</a>
         <a class="nav-link" href="{% url 'conseils' %}">Conseils</a>
         <a class="nav-link" href="{% url 'vocabulaire' %}">Vocabulaire</a>
+        <a class="nav-link" href="{% url 'choix_perso' %}">Choix perso</a>
       </nav>
     </div>
   </header>
@@ -73,9 +38,5 @@
       <p class="footer-small">Django • Git • Travail en équipe</p>
     </div>
   </footer>
-<<<<<<< HEAD
-
-=======
->>>>>>> c5d2e946a238c02b30a1fb0a224e960ea165c567
 </body>
 </html>
