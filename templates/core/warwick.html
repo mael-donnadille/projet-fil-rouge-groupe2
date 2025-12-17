@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Warwick – La Fureur Déchaînée de Zaun</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #e5e7eb;
+
+            background-image: url("{% static 'warwick/background3.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(2, 6, 23, 0.85);
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #facc15;
+        }
+
+        header p {
+            max-width: 800px;
+            margin: auto;
+            color: #cbd5f5;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .skill {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 20px;
+            background: rgba(2, 6, 23, 0.9);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .skill img {
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+            border: 2px solid #38bdf8;
+        }
+
+        .skill h2 {
+            margin: 0;
+            color: #38bdf8;
+        }
+
+        .skill span {
+            color: #facc15;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Warwick</h1>
+    <p>
+        La Fureur Déchaînée de Zaun est un chasseur implacable qui traque les ennemis blessés.
+        Plus ses proies sont faibles, plus Warwick devient rapide et dangereux.
+    </p>
+</header>
+
+<div class="container">
+
+    <div class="skill">
+        <img src="{% static 'warwick/p3.png' %}">
+        <div>
+            <h2><span>Passif</span> – Soif Infinie</h2>
+            <p>
+                Les attaques de base de Warwick infligent des dégâts magiques bonus et lui rendent
+                des points de vie. Lorsque sa santé est faible, ses soins sont fortement augmentés,
+                ce qui le rend extrêmement difficile à éliminer en combat prolongé.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill">
+        <img src="{% static 'warwick/q3.png' %}">
+        <div>
+            <h2><span>A</span> – Crocs de la Bête</h2>
+            <p>
+                Warwick bondit sur sa cible et la mord, infligeant des dégâts magiques basés sur les
+                points de vie maximums de l’ennemi. Il se soigne en fonction des dégâts infligés
+                et peut suivre sa cible même si elle tente de s’échapper.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill">
+        <img src="{% static 'warwick/w3.png' %}">
+        <div>
+            <h2><span>Z</span> – Chasse Sanguinaire</h2>
+              <p>
+                Warwick détecte les ennemis à faible santé sur toute la carte. Lorsqu’il les poursuit,
+                il gagne énormément de vitesse de déplacement et d’attaque, lui permettant de traquer
+                et d’achever ses proies sans relâche.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill">
+        <img src="{% static 'warwick/e3.png' %}">
+        <div>
+            <h2><span>E</span> – Hurlement Primitif</h2>
+            <p>
+                Warwick réduit temporairement les dégâts qu’il subit avant de pousser un hurlement
+                terrifiant qui effraie les ennemis proches, les forçant à fuir et ouvrant une
+                opportunité idéale pour engager ou survivre.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill">
+        <img src="{% static 'warwick/r3.png' %}">
+        <div>
+            <h2><span>R</span> – Contrainte Infinie</h2>
+            <p>
+                Warwick bondit sur une longue distance et supprime le premier champion ennemi touché.
+                Il le cloue au sol, inflige de lourds dégâts sur la durée et se soigne massivement,
+                faisant de cette compétence une arme dévastatrice en duel et en teamfight.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    Projet Django – Page fan League of Legends
+</footer>
+
+</body>
+</html>

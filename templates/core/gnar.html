@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Gnar – Le Yordle Sauvage</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #e5e7eb;
+
+            background-image: url("{% static 'gnar/background2.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(2, 6, 23, 0.85);
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #facc15;
+        }
+
+        header p {
+            max-width: 800px;
+            margin: auto;
+            color: #cbd5f5;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .skill {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 20px;
+            background: rgba(2, 6, 23, 0.9);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .skill img {
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+            border: 2px solid #38bdf8;
+        }
+
+        .skill h2 {
+            margin: 0;
+            color: #38bdf8;
+        }
+
+        .skill span {
+            color: #facc15;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Gnar</h1>
+    <p>Le Yordle Sauvage alterne entre petites attaques rapides et formes monstrueuses dévastatrices.</p>
+</header>
+
+<div class="container">
+
+    <div class="skill">
+        <img src="{% static 'gnar/p2.png' %}">
+        <div>
+            <h2><span>Passif</span> – Rage de Gnar</h2>
+            <p>
+                Gnar accumule de la rage lorsqu’il attaque ou subit des dégâts. 
+                Lorsqu’il est plein de rage, il se transforme en Gnar monstrueux avec de nouvelles compétences.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill">
+        <img src="{% static 'gnar/q2.png' %}">
+        <div>
+            <h2><span>A</span> – Boomerang / Boulder Toss</h2>
+            <p>
+                Gnar lance un boomerang infligeant des dégâts. 
+                En forme monstrueuse, il jette un rocher qui inflige des dégâts de zone et ralentit les ennemis.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill">
+        <img src="{% static 'gnar/w2.png' %}">
+        <div>
+            <h2><span>Z</span> – Hyper / Wallop</h2>
+            <p>
+                Gnar attaque rapidement ses ennemis, infligeant des dégâts supplémentaires. 
+                En forme monstrueuse, il assène un coup au sol qui étourdit les ennemis proches.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill">
+        <img src="{% static 'gnar/e2.png' %}">
+        <div>
+            <h2><span>E</span> – Hop / Crunch</h2>
+            <p>
+                Gnar saute en avant, infligeant des dégâts à l’atterrissage. 
+                En forme monstrueuse, il écrase les ennemis et les projette légèrement en arrière.
+            </p>
+        </div>
+    </div>
+
+    <div class="skill">
+        <img src="{% static 'gnar/r2.png' %}">
+        <div>
+            <h2><span>R</span> – GNAR !</h2>
+            <p>
+                Gnar frappe violemment les ennemis à proximité, les projetant contre les murs et infligeant des dégâts de zone massifs.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    Projet Django – Page fan League of Legends
+</footer>
+
+</body>
+</html>

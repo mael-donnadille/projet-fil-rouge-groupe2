@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}LoL Débutants{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  {% block extra_head %}{% endblock %}
+</head>
+
+<body class="{% block body_class %}{% endblock %}">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{% url 'home' %}">
+        <span class="brand-mark">LoL</span>
+        <span class="brand-text">Débutants</span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link" href="{% url 'home' %}">Accueil</a>
+        <a class="nav-link" href="{% url 'roles' %}">Rôles</a>
+        <a class="nav-link" href="{% url 'carte' %}">Carte</a>
+        <a class="nav-link" href="{% url 'conseils' %}">Conseils</a>
+        <a class="nav-link" href="{% url 'vocabulaire' %}">Vocabulaire</a>
+        <a class="nav-link" href="{% url 'choix_perso' %}">Champions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Projet fil rouge — Groupe 2</p>
+      <p class="footer-small">Django • Git • Travail en équipe</p>
+    </div>
+  </footer>
+</body>
+</html>

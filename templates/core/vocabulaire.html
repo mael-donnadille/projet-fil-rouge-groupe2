@@ -1,0 +1,34 @@
+{% extends "core/base.html" %}
+
+{% block title %}Vocabulaire — LoL Débutants{% endblock %}
+
+{% block content %}
+<h2>Vocabulaire</h2>
+<p>Les mots les plus utilisés en game, expliqués simplement.</p>
+
+<form method="get" style="margin: 12px 0;">
+  <input type="text" name="q" placeholder="Rechercher un terme (ex: gank)" value="{{ q|default:'' }}">
+  <button type="submit">Rechercher</button>
+  {% if q %}<a href="{% url 'vocabulaire' %}">Réinitialiser</a>{% endif %}
+</form>
+
+{% if q %}
+  <p><strong>Résultats pour :</strong> "{{ q }}"</p>
+{% endif %}
+
+<ul>
+  {% for item in vocab %}
+    <li style="margin-bottom: 10px;">
+      <strong>{{ item.term }}</strong>
+      {% if item.alias %}<em>({{ item.alias }})</em>{% endif %}
+      <br>
+      {{ item.def }}
+      {% if item.example %}
+        <br><small><em>Exemple :</em> {{ item.example }}</small>
+      {% endif %}
+    </li>
+  {% empty %}
+    <li>Aucun terme trouvé.</li>
+  {% endfor %}
+</ul>
+{% endblock %}

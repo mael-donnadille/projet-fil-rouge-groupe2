@@ -1,0 +1,22 @@
+# Environnement virtuel Python
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+db.sqlite3
+
+# Django
+db.sqlite3
+*.log
+media/
+
+# IDE / éditeurs
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
