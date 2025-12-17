@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: var(--font-text);
+  color: var(--color-text);
+  background:
+    linear-gradient(
+      rgba(5, 8, 15, 0.85),
+      rgba(5, 8, 15, 0.85)
+    ),
+    url("../img/bg-lol.jpg") center / cover fixed;
+}

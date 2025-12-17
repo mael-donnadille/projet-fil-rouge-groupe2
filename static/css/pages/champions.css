@@ -1,0 +1,14 @@
+.champion-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.champion-header h1 {
+  font-family: var(--font-title);
+  color: var(--color-gold);
+  font-size: 3rem;
+}
+
+.champion-header p {
+  color: var(--color-muted);
+}

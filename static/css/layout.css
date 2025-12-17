@@ -1,0 +1,16 @@
+.main-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  color: var(--color-gold);
+  margin-bottom: 20px;
+}

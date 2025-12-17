@@ -1,0 +1,18 @@
+:root {
+  /* Couleurs principales */
+  --color-bg-main: #05080f;
+  --color-bg-overlay: rgba(10, 15, 30, 0.85);
+
+  --color-gold: #f5c542;
+  --color-blue: #2ecbff;
+  --color-text: #e6e6e6;
+  --color-muted: #9aa4b2;
+
+  /* Effets */
+  --blur-bg: blur(6px);
+  --border-soft: 1px solid rgba(255,255,255,0.08);
+
+  /* Typo */
+  --font-title: 'Beaufort for LOL', 'Cinzel', serif;
+  --font-text: 'Inter', 'Roboto', sans-serif;
+}

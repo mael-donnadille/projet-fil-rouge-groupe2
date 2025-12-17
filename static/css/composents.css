@@ -1,0 +1,24 @@
+.card {
+  background: var(--color-bg-overlay);
+  backdrop-filter: var(--blur-bg);
+  border: var(--border-soft);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  color: var(--color-gold);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.skill-name {
+  color: var(--color-blue);
+  font-weight: 600;
+}
+
+.skill-text {
+  color: var(--color-muted);
+  line-height: 1.6;
+}
