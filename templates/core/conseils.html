@@ -1,0 +1,163 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Conseils – League of Legends</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #e5e7eb;
+            background: linear-gradient(180deg, #020617, #020617);
+        }
+
+        header {
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #facc15;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            max-width: 900px;
+            margin: auto;
+            color: #cbd5f5;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .tip {
+            background: rgba(2, 6, 23, 0.95);
+            border-radius: 18px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease;
+        }
+
+        .tip:hover {
+            transform: translateY(-6px);
+        }
+
+        .tip h2 {
+            color: #38bdf8;
+            margin-top: 0;
+        }
+
+        .tip p {
+            line-height: 1.7;
+            color: #d1d5db;
+        }
+
+        .tip span {
+            color: #facc15;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Conseils pour progresser sur League of Legends</h1>
+    <p>
+        Que tu sois débutant ou joueur confirmé, ces conseils te permettront
+        d’améliorer ta compréhension du jeu et ton impact en partie.
+    </p>
+</header>
+
+<div class="container">
+
+    <div class="tip">
+        <h2>🎯 Choisis un rôle principal</h2>
+        <p>
+            Se spécialiser dans un rôle te permet de mieux comprendre ses mécaniques,
+            ses timings et ses responsabilités.
+            Mieux vaut maîtriser <span>un rôle et quelques champions</span>
+            que jouer tout sans réelle expertise.
+        </p>
+    </div>
+
+    <div class="tip">
+        <h2>👀 Travaille ta vision</h2>
+        <p>
+            La vision est l’un des éléments les plus importants du jeu.
+            Place régulièrement des balises, achète des balises de contrôle
+            et pense à nettoyer la vision ennemie.
+            Une bonne vision permet d’éviter les morts inutiles et de sécuriser les objectifs.
+        </p>
+    </div>
+
+    <div class="tip">
+        <h2>🧠 Joue avec ta mini-carte</h2>
+        <p>
+            Regarder la mini-carte toutes les quelques secondes doit devenir un réflexe.
+            Cela te permet d’anticiper les ganks, de suivre les déplacements ennemis
+            et de prendre de meilleures décisions.
+        </p>
+    </div>
+
+    <div class="tip">
+        <h2>⏱️ Apprends les timings</h2>
+        <p>
+            Connaître les temps de réapparition des objectifs (Dragons, Baron, buffs)
+            et les temps de retour des sorts d’invocateur est un énorme avantage.
+            Anticiper est souvent plus fort que réagir.
+        </p>
+    </div>
+
+    <div class="tip">
+        <h2>⚔️ Ne force pas les combats</h2>
+        <p>
+            Tous les combats ne sont pas bons à prendre.
+            Évalue toujours l’état de la partie, les niveaux, les objets
+            et la position de tes alliés avant de t’engager.
+            Savoir reculer est une vraie compétence.
+        </p>
+    </div>
+
+    <div class="tip">
+        <h2>📈 Analyse tes parties</h2>
+        <p>
+            Revoir ses erreurs est le meilleur moyen de progresser.
+            Pose-toi des questions simples après une défaite :
+            <span>Pourquoi suis-je mort ? Était-ce évitable ?</span>
+            Chaque erreur est une opportunité d’apprentissage.
+        </p>
+    </div>
+
+    <div class="tip">
+        <h2>😌 Garde un bon mental</h2>
+        <p>
+            League of Legends est un jeu d’équipe.
+            Garde ton calme, mute si nécessaire et concentre-toi sur ce que tu peux contrôler.
+            Un bon mental permet de gagner des parties même en situation difficile.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    Projet Django – Page Conseils League of Legends
+</footer>
+
+</body>
+</html>
